@@ -25,13 +25,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
 document.querySelector('.contact-form').addEventListener('submit', function(e) {
             e.preventDefault();
-            // Optionally, you can clear the form fields here
+            
             this.reset();
-            // Show a success message
+        
             let msg = document.createElement('div');
             msg.className = 'success-message';
             msg.textContent = 'Thank you for contacting us! We will get back to you soon.';
-            // Remove any existing message
+           
             let oldMsg = document.querySelector('.success-message');
             if (oldMsg) oldMsg.remove();
             this.parentNode.appendChild(msg);
