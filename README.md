@@ -12,8 +12,11 @@ Responsive on mobile and desktop
  `style.css` – Styling and design
  `script.js` – For interactive features
 
- Live Link
-Coming soon...
+live link : https://boe-foods.netlify.app/
 
+If you like this project, please consider giving it a ⭐️  
+It helps others discover it and keeps me motivated!
+
+![GitHub stars](https://img.shields.io/github/stars/olayinkabolu97/Boe-food-landing-page-?style=social)
 
 Designed and developed by Boluwatife Olayinka
