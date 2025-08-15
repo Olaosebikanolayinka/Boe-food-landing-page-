@@ -251,6 +251,7 @@ header .navbar{
     margin: 10px;
     position: relative;
     padding-bottom: 3.5rem; /* Add space for the button */
+    margin-bottom: 350px;     /* Add this line for extra space below menu */
 }
 
 .menu-container h2{
@@ -535,6 +536,69 @@ header .navbar{
     line-height: 40px;
 }
 
+.card-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 12px;
+}
+
+.order-btn {
+    background: #f3961c;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 6px 18px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+
+.order-btn:hover {
+    background: #c1163b;
+}
+
+.icon i{
+    font-size: 20px;
+    cursor: pointer;
+    padding: 6px;
+    border-radius: 50%;
+    background: transparent;
+    color: #110f0f;
+    transition: background 0.2s, color 0.2s;
+}
+
+.icon.cart {
+    position: relative;
+}
+
+.icon.favorite i{
+    color: #efe0e3;
+    
+}
+
+.icon.favorite.active  i{
+    color: #e53935; /* Red when active */
+}
+
+
+.cart-badge {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background: #f3961c;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 50%;
+    padding: 2px 6px;
+    min-width: 18px;
+    min-height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    z-index: 2;
+}
 @media (max-width: 900px) {
     .hamburger {
         display: flex;
@@ -725,4 +789,112 @@ header .navbar{
         margin: 1.5rem auto 0 auto;
         text-align: center;
     }
+}
+
+/* Center the Testimonial h2 and add color for all section headings */
+#testimonial h2,
+.menu-container h2,
+.about-section h2,
+.contact-section h2 {
+    text-align: center;
+    color: #c1163b; /* Deep wine/red color */
+    margin-bottom: 32px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* Dropdown Styles */
+.dropdown-list {
+    display: none;
+    position: absolute;
+    background: #3b141c; /* wine color */
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+    margin-top: 8px;
+    padding: 0;
+    list-style: none;
+    border-radius: 0 0 8px 8px;
+    z-index: 100;
+}
+
+.dropdown-list li {
+    border-bottom: 1px solid #333;
+}
+
+.dropdown-list li:last-child {
+    border-bottom: none;
+}
+
+.dropdown-list a {
+    color: #fff;
+    padding: 12px 20px;
+    display: block;
+    text-decoration: none;
+    transition: background 0.2s;
+}
+
+.dropdown-list a:hover {
+    background: #f3961c;
+    color: #222;
+}
+
+.nav-item.dropdown {
+    position: relative;
+}
+
+.arrow {
+    margin-left: 6px;
+    font-size: 12px;
+    transition: transform 0.2s;
+}
+
+.arrow.open {
+    transform: rotate(180deg);
+}
+
+.hidden-card {
+    display: none;
+}
+
+#see-less {
+    background: #c1163b;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 22px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-left: 10px;
+    transition: background 0.2s;
+}
+
+#see-less:hover {
+    background: #a01331;
+}
+
+.footer {
+    background: #3b141c;
+    color: #fff;
+    text-align: center;
+    padding: 24px 0 16px 0;
+    margin-top: 40px;
+    border-top: 3px solid #f3961c;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+.footer-content p {
+    margin: 0;
+    padding: 0 10px;
+    line-height: 1.6;
+    color: #ddd;
+}
+
+.footer-content a {
+    color: #f3961c;
+    text-decoration: underline;
+}
+
+.footer-content a:hover {
+    color: #fff;
 }

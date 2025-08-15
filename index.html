@@ -24,7 +24,17 @@
 
             <ul class="nav-menu">
                 <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="#menu" class="nav-link">Menu</a></li>
+                <li class="nav-item dropdown">
+                    <a href="#menu" class="nav-link" id="menuDropdownToggle">
+                        Menu <span class="arrow">&#9660;</span>
+                    </a>
+                    <ul class="dropdown-list" id="menuDropdown">
+                        <li><a href="#biryani">Biryani</a></li>
+                        <li><a href="#risotto">Risotto</a></li>
+                        <li><a href="#dosa">Dosa</a></li>
+                        <li><a href="#lasagna">Lasagna</a></li>
+                    </ul>
+                </li>
                 <li class="nav-item"><a href="#testimonial" class="nav-link">Testimonial</a></li>
                 <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
@@ -90,58 +100,155 @@
 
     <!--menu section-->
 
-    <section id="menu" class="menu-container">
+    <section class="menu-container">
         <h2>Our Menu</h2>
         <div class="menu-content">
             <div class="image-container">
                 <div class="box">
-                <img src="./pngegg.png" alt="">
+                <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=400&q=80" alt="Biryani">
                 <h3>Biryani</h3>
                 <p>This has the elegance of a Parisian bistro refined and deeply satisfying.</p>
+                <div class="card-actions">
+                    <button class="order-btn">Place Order</button>
+                    <span class="icon cart"><i class="fa fa-shopping-cart"></i></span>
+                    <span class="icon favorite"><i class="fa fa-heart"></i></span>
+                </div>
             </div>
 
-
             <div class="box">
-                <img src="./broccoli.png" alt="">
-                <h3>Risotto </h3>
+                <img src="https://images.unsplash.com/photo-1464306076886-debca5e8a6b0?auto=format&fit=crop&w=400&q=80" alt="Risotto">
+                <h3>Risotto</h3>
                 <p>This could easily be served in a Tokyo sushi bar beautifully crafted.</p>
+                <div class="card-actions">
+                    <button class="order-btn">Place Order</button>
+                    <span class="icon cart"><i class="fa fa-shopping-cart"></i></span>
+                    <span class="icon favorite"><i class="fa fa-heart"></i></span>
+                </div>
             </div>
 
 
             <div class="box">
-                <img src="./garri.png" alt="">
+                <img src="https://images.unsplash.com/photo-1502741338009-cac2772e18bc?auto=format&fit=crop&w=400&q=80" alt="Dosa">
                 <h3>Dosa</h3>
                 <p>The sauce is rich and velvety mamma mia, that’s good!</p>
+                <div class="card-actions">
+                    <button class="order-btn">Place Order</button>
+                    <span class="icon cart"><i class="fa fa-shopping-cart"></i></span>
+                    <span class="icon favorite"><i class="fa fa-heart"></i></span>
+                </div>
             </div>
 
             <div class="box">
-                <img src="./pngegg.png" alt="">
+                <img src="https://images.unsplash.com/photo-1519864600265-abb23847ef2c?auto=format&fit=crop&w=400&q=80" alt="Lasagna">
                 <h3>Lasagna</h3>
                 <p>Exquisite this is the kind of dish that makes you slow down and savor every bite.</p>
+                <div class="card-actions">
+                    <button class="order-btn">Place Order</button>
+                    <span class="icon cart"><i class="fa fa-shopping-cart"></i></span>
+                    <span class="icon favorite"><i class="fa fa-heart"></i></span>
+                </div>
             </div>
 
 
             <div class="box">
-                <img src="./588248b2e81acb96424ffab0.png" alt="">
+                <img src="https://images.unsplash.com/photo-1506089676908-3592f7389d4d?auto=format&fit=crop&w=400&q=80" alt="Tacos">
                 <h3>Tacos</h3>
                 <p>The presentation is beautiful, and the textures are well balanced it’s clear a lot of care went into this.</p>
+                <div class="card-actions">
+                    <button class="order-btn">Place Order</button>
+                    <span class="icon cart"><i class="fa fa-shopping-cart"></i></span>
+                    <span class="icon favorite"><i class="fa fa-heart"></i></span>
+                </div>
             </div>
 
 
             <div class="box">
-                <img src="./pngimg.com - turkey_food_PNG14.png" alt="">
+                <img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&fit=crop&w=400&q=80" alt="Tempura">
                 <h3>Tempura</h3>
                 <p>If flavor were a crime, this plate would be doing life without parole.</p>
+                <div class="card-actions">
+                    <button class="order-btn">Place Order</button>
+                    <span class="icon cart"><i class="fa fa-shopping-cart"></i></span>
+                    <span class="icon favorite"><i class="fa fa-heart"></i></span>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="https://images.unsplash.com/photo-1519864600265-abb23847ef2c?auto=format&fit=crop&w=400&q=80" alt="Pizza">
+                <h3>Pizza</h3>
+                <p>Classic Italian pizza with a crispy crust, fresh mozzarella, and basil.</p>
+                <div class="card-actions">
+                    <button class="order-btn">Place Order</button>
+                    <span class="icon cart"><i class="fa fa-shopping-cart"></i></span>
+                    <span class="icon favorite"><i class="fa fa-heart"></i></span>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=400&q=80" alt="Ramen">
+                <h3>Ramen</h3>
+                <p>Japanese noodle soup with rich broth, tender pork, and soft-boiled egg.</p>
+                <div class="card-actions">
+                    <button class="order-btn">Place Order</button>
+                    <span class="icon cart"><i class="fa fa-shopping-cart"></i></span>
+                    <span class="icon favorite"><i class="fa fa-heart"></i></span>
+                </div>
+            </div>
+
+            <div class="box hidden-card">
+                <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=400&q=80" alt="Paella">
+                <h3>Paella</h3>
+                <p>Spanish rice dish loaded with seafood, chicken, and vibrant spices.</p>
+                <div class="card-actions">
+                    <button class="order-btn">Place Order</button>
+                    <span class="icon cart"><i class="fa fa-shopping-cart"></i></span>
+                    <span class="icon favorite"><i class="fa fa-heart"></i></span>
+                </div>
+            </div>
+
+            <div class="box hidden-card">
+                <img src="https://images.unsplash.com/photo-1464306076886-debca5e8a6b0?auto=format&fit=crop&w=400&q=80" alt="Sushi">
+                <h3>Sushi</h3>
+                <p>Freshly rolled sushi with salmon, avocado, and a touch of wasabi.</p>
+                <div class="card-actions">
+                    <button class="order-btn">Place Order</button>
+                    <span class="icon cart"><i class="fa fa-shopping-cart"></i></span>
+                    <span class="icon favorite"><i class="fa fa-heart"></i></span>
+                </div>
+            </div>
+
+            <div class="box hidden-card">
+                <img src="https://images.unsplash.com/photo-1502741338009-cac2772e18bc?auto=format&fit=crop&w=400&q=80" alt="Shawarma">
+                <h3>Shawarma</h3>
+                <p>Middle Eastern wrap filled with spiced meat, veggies, and creamy sauce.</p>
+                <div class="card-actions">
+                    <button class="order-btn">Place Order</button>
+                    <span class="icon cart"><i class="fa fa-shopping-cart"></i></span>
+                    <span class="icon favorite"><i class="fa fa-heart"></i></span>
+                </div>
+            </div>
+
+            <div class="box hidden-card">
+                <img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&fit=crop&w=400&q=80" alt="Falafel">
+                <h3>Falafel</h3>
+                <p>Crispy Middle Eastern falafel balls served with fresh veggies and tahini sauce.</p>
+                <div class="card-actions">
+                    <button class="order-btn">Place Order</button>
+                    <span class="icon cart"><i class="fa fa-shopping-cart"></i></span>
+                    <span class="icon favorite"><i class="fa fa-heart"></i></span>
+                </div>
             </div>
         </div>
         
         </div>
         <div class="see-more-wrapper">
             <button id="see-more">See More</button>
+            <button id="see-less" style="display:none;">See Less</button>
         </div>
     </section>
 
     <section id="testimonial" class="testimonial">
+         <h2>Testimonial</h2>
         <div class="testimonial-content">
             <div class="testimonial-grid">
                 <div class="testimonial-card">
@@ -199,5 +306,10 @@
     </section>
 
     <script src="script.js"></script>
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 BOE Foods. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
